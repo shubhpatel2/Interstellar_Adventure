@@ -1,0 +1,539 @@
+<style>
+/* Global Styles */
+body {
+font-family: 'Roboto', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+background-color: #0F044C;
+color: #fff;
+padding: 20px 0;
+}
+
+.logo {
+font-size: 24px;
+font-weight: bold;
+text-decoration: none;
+color: #fff;
+}
+
+.nav {
+float: right;
+}
+
+.nav-links li {
+display: inline-block;
+margin-left: 20px;;
+}
+
+.nav-links li a {
+text-decoration: none;
+color: #fff;
+}
+
+/* Home Section Styles */
+.home-section {
+background-color: #000;
+color: #fff;
+padding: 100px 0;
+text-align: center;
+}
+
+/* About Section Styles */
+.about-section {
+background-color: #f8f9fa;
+padding: 100px 0;
+text-align: center;
+}
+
+/* Gallery Section Styles */
+.gallery-section {
+padding: 100px 0;
+text-align: center;
+}
+
+.gallery-images img {
+margin: 20px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+background-color: #f8f9fa;
+padding: 100px 0;
+text-align: center;
+}
+
+.contact-form {
+max-width: 500px;
+margin: 0 auto;
+text-align: left;
+}
+
+.contact-form label {
+display: block;
+margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.contact-form button {
+background-color: #0F044C;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.contact-form button:hover {
+background-color: #333;
+}
+
+/* Footer Styles */
+.footer {
+background-color: #333;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+}
+:root {
+    --main-color: rgb(61, 92, 184);
+    --white-color: #FFFFFF;
+    --border-color: #ccc;
+    --light-gray: #64748b;
+    --text-extra-white: #f1f5f9;
+  }
+  
+  body
+  {
+   background-color:white;
+    overflow-x: hidden;
+  }
+  #Brand_name
+  {
+    font-weight: bold; 
+    font-size: 30px;
+     margin-left: 10px;
+  }
+  
+  .navbar-nav .nav-link {
+    /* color: white !important; */
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 15px;
+    /* Adjust as needed */
+  }
+  
+  .navbar .navbar-brand {
+    font-weight: 600;
+  
+  }
+  
+  .navbar-toggler {
+    border-color: white;
+  }
+  
+  .navbar-brand {
+    font-weight: 600;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  ::-webkit-scrollbar{
+    width: 0.5rem;
+    background:#DFF5FF;
+  }
+  ::-webkit-scrollbar-thumb{
+    width:0..5rem;
+    background: #378CE7;
+    border-radius: 10px;
+  }
+  
+  #header-content {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  header img {
+    display: block;
+    margin: 0 auto;
+  }
+  #header_1
+  {
+    border-radius: 900px;
+    opacity: 0.8;
+    padding: auto;
+    width: 1000px;
+    margin: auto;
+  
+  }
+  
+  #Economy{
+  background-color: antiquewhite;
+  border:radius 15px;
+  padding-top : 55px;
+  box-shadow:6px 8px 5px 6px rgb(14 55 54 / 15%) ;
+  }
+  .custom-btn {
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    background-color:lightgray;
+    color: black;
+  }
+  .custom-btn:hover {
+    background-color: #6495ED;
+  cursor: pointer;
+  }
+  
+  .submit-btn:hover
+  {
+    background-color: #95b3ec;
+  cursor: pointer;
+  }
+  
+  
+  .custom-style .form-control {
+    font-weight: 600;
+    border-radius: 5px;
+    border-color: lightblue;
+    /* Gray border color */
+  }
+  
+  /* Adjust form label styles */
+  .custom-style label {
+    font-weight: 600;
+    color: black;
+    /* Gray label color */
+  }
+  
+  /* Adjust hr styles */
+  .custom-style hr {
+    font-weight: 600;
+    border-color: black;
+    /* Gray hr color */
+  }
+  
+  /* Adjust paragraph styles */
+  .custom-style p {
+    font-weight: 600;
+    color: black;
+    /* Gray paragraph color */
+    font-size: 16px;
+  }
+  #travel_div
+  {
+    background-color: #DFF5FF;
+     border-radius: 20px;
+  }
+  .plan_image {
+    position: relative;
+  
+  }
+  .h2
+  {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
+  .plan_image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .plan_image img:nth-child(1) {
+    max-width: 240px;
+    transform: translate(calc(-50% - 9rem), calc(-50% + 5rem));
+    z-index: 3;
+  }
+  
+  .plan_image img:nth-child(2) {
+    max-width: 250px;
+    transform: translate(-50%, calc(-50% - 5rem));
+    z-index: 2;
+  }
+  
+  .plan_image img:nth-child(3) {
+    max-width: 220px;
+    transform: translate(calc(-50% + 9rem), calc(-50% + 5rem));
+  }
+  
+  .plan_image {
+    display: none;
+  }
+  
+  
+  @media (min-width: 1200px) {
+    .plan_image {
+      display: block;
+    }
+  
+    .col-md-6 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  
+  .travel-container {
+    margin-top: 15px;
+    padding: 20px;
+  }
+  
+  /*  text-box styling*/
+  text-box-content {
+    margin-bottom: 20px;
+  
+  }
+  
+  .text-content {
+    padding: 20px;
+    /* border: 1px solid var(--border-color); */
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #EEEEEE;
+  }
+  
+  .number {
+    display: inline-block;
+    /* Make the number span inline-block */
+    width: 40px;
+    /* Set a fixed width for the number */
+    height: 40px;
+    /* Set a fixed height for the number */
+    line-height: 40px;
+    /* Vertically center the number */
+    text-align: center;
+    /* Center the number horizontally */
+    background-color: slateblue;
+    /* Add background color to the number */
+    color: #fff;
+    /* Set text color to white */
+    font-size: 20px;
+    /* Adjust font size */
+    border-radius: 50%;
+    /* Make the number circular */
+    margin-bottom: 10px;
+    /* Add some bottom margin to separate it from the heading */
+  }
+  
+  .text-content h4 {
+    color: black;
+    /* Set color for the heading */
+  }
+  
+  .text-content p {
+    color: #666;
+    /* Set color for the paragraph */
+  }
+  #travelers
+  {
+  background-color: #9BB0C1;
+   border-radius: 20px
+  }
+  
+  /* footer styling */
+  .footer {
+    background-color: var(--main-color);
+    padding: 50px 0;
+  }
+  
+  .footer-text h3 {
+    color: var(--white-color);
+  }
+  
+  .footer-text p {
+    color: var(--white-color);
+  
+  }
+  
+  .footer-column h4 {
+    color: var(--white-color);
+    margin-bottom: 20px;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Footer End */
+  .footer-end {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  #footer_sub{
+    text-align: center;
+     background-color: #fff; 
+     color: black; 
+     border: none; 
+     padding: 10px 20px;
+     cursor: pointer;
+  
+  }
+  
+  
+  .box-info button.btn:hover {
+    background-color: #0056b3;
+    /* Change background color on hover  */
+  }
+  
+  .box-info button.btn {
+    padding: 10px 20px;
+    /* Add padding to the button */
+    border: none;
+    /* Remove the button border */
+    border-radius: 5px;
+    /* Add border radius to the button */
+    background-color: #007bff;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    font-size: 16px;
+    /* Button font size */
+    font-weight: bold;
+    /* Button font weight */
+    cursor: pointer;
+    /* Cursor style */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition on hover */
+  }
+  
+  .card-custom-btn {
+    font-weight: 600;
+    padding: 10px 50px;
+    border: 1px solid var(--light-gray);
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: var(--text-extra-white);
+    color: black;
+  }
+  
+  .card-custom-button:hover {
+    background-color: var(--main-color);
+    /* Hover background color */
+    color: var(--white-color);
+    /* Hover text color */
+  }
+  
+  
+  
+  
+  .box-card {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 50px;
+  }
+  
+  #card_1:hover {
+    border: 2px solid blue;
+    background-color: #ffffff;
+    padding: 2px;
+    border-radius: 50px;
+    box-shadow: 2px 1px 2px 1px greenyellow;
+  }
+  
+  
+  .box-card span i {
+    font-size: 3rem;
+    /* Adjust icon size */
+    color: #007bff;
+    /* Set icon color */
+  }
+  
+  .list-unstyled a i{
+    background:#fff;
+   font-size: 25px;
+  }
+  
+  .box-card h4 {
+    font-weight: bold;
+    /* Make title bold */
+    margin-top: 1rem;
+    /* Add margin top */
+  }
+  
+  .box-card p {
+    color: #6c757d;
+    border-radius: 50px;
+    /* Set text color */
+  }
+  
+  .card {
+    border: none;
+    /* Remove default card border */
+  }
+  
+  .subscribe-form
+  {background-color: rgb(61, 92, 184); 
+    color: #fff;
+     padding: 20px;
+     border-radius: 5px}
+  .subscribe-btn {
+    padding: 0.7rem 2.4rem;
+    border-radius: 0.2rem;
+    font-weight: 600;
+    background-color: var(#fff);
+    color: var(--main-color);
+    border: 1px solid var(--border-color);
+  }
+  
+  .lounge-details h4{
+    font-size: 25px;
+  }
+  .lounge-details p{
+    font-size: 15px;
+  }
+  
+  .submit-btn {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #007bff;
+  }
+  
